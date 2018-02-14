@@ -1,0 +1,29 @@
+.hbox {
+  display:flex;
+  flex-direction:row;
+}
+.vbox {
+  display:flex;
+  flex-direction:column;
+}
+
+.hfil {flex: 1 0 0pt;}
+.hfilneg {flex: 0 1 0pt;}
+.hss, .vss {flex: 1 1 0pt;}
+
+.qc {text-align:center;}
+.qr {text-align:right;}
+.ql {text-align:left;}
+.qj {text-align:justify;}
+
+.red {color:red;}
+.bg-red {background-color:red;}
+.green {color:green;}
+.bg-green {background-color:green;}
+
+.hbox-qj {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
