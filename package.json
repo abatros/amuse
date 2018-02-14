@@ -5,6 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "@babel/runtime": "^7.0.0-beta.40",
     "babel-runtime": "^6.26.0",
     "bloodhound-js": "^1.2.2",
     "encodeurl": "^1.0.1",
