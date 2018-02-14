@@ -1,0 +1,37 @@
+<template name="article">
+
+<div class="article-layout" style="position:relative;">
+  {{> ad_server_panel}}
+  <header class="hbox-qj" style="
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+    padding: 0;
+  ">
+  <div>
+    &emsp;
+    {{#if subIndex_count}}
+      [ <a href="{{pathFor 'index'}}">{{_ 'back-to-selection'}}</a> ]
+      &emsp;
+      {{subIndex_cursor}} / {{subIndex_count}} {{_ 'documents'}}
+    {{else}}
+      [ <a href="{{pathFor 'index'}}">{{_ 'general-index'}}</a> ]
+    {{/if}}
+  </div>
+
+  <div class="af3" style="padding:0;margin:0;min-height:35px;">
+    {{#if subIndex_count}}
+    <a href="#" class="l-arrow js-prev-article">
+      <i class="fa fa-chevron-left" aria-hidden="true"></i>
+    </a>
+
+    <a href="#" class="r-arrow js-next-article">
+      <i class="fa fa-chevron-right" aria-hidden="true"></i>
+    </a>
+    {{/if}}
+  </div>
+
+  </header>
+  {{> preview_panel}}
+</div>
+
+</template>

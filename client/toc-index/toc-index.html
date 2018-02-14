@@ -1,0 +1,50 @@
+<template name="toc-index">
+  <title>Musee Ultimheat du Chauffage</title>
+
+<style>
+
+b.entry-h1 {
+  _color:rgba(165, 42, 42, 0.88);
+  color:brown;
+  font-weight:900;
+}
+
+.hangingindent {
+  padding-left: 48px ;
+  text-indent: -48px ;
+}
+
+</style>
+
+<div id="toc-index">
+  <!--
+<hr>
+[ <a href="{{pathFor 'index'}}">New Search</a> ]
+<hr>
+-->
+
+<h2 style="color:brown;width:100%;text-align:center;line-height:2em; ">
+      Musée Ultimheat du chauffage
+</h2>
+
+<h3 style="width:100%;text-align:center;">
+Index General des Articles ({{total_entries}})
+</h3>
+
+{{#if loading}}
+<p><i>Please wait...</i></p>
+{{/if}}
+
+
+<div style="margin: 0px 80px; text-align:left;">
+	{{#each it in index}}
+  <p class="toc-entry hangingindent">
+    {{inc @index}}&mdash;&ensp;
+    <a href="{{pathFor '/article/:id' id=it.id}}"><b class="entry-h1">{{it.yp}} {{it.h1}}</b></a> &ndash; {{it.h2}}
+  </p>
+	{{/each}}
+
+</div>
+
+</div>
+</template>
