@@ -1,6 +1,4 @@
-Install babel before starting Meteor.
-
-``` 
+    $ Git clone 
+    $ cd amuse
     $ meteor npm install --save @babel/runtime
     $ meteor
-```
