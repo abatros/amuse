@@ -1,21 +1,13 @@
 const pgp = require('pg-promise')({});
 
 
-/****************
-const db = pgp({
-  host: 'ultimheat.com',
-  port: 5433,
-  database: 'blueink',
-  user: 'postgres',
-});
-*****************/
 
 const db = pgp({
   host: 'inhelium.com',
   port: 5432,
   database: 'blueink2',
-  user: 'afruth',
-  password: 'secret',
+  user: 'xxxxx',
+  password: 'xxxx',
 });
 
 
